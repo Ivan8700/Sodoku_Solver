@@ -1,5 +1,5 @@
 # Sodoku solver
-An algorithm that uses the Backtracking method to solve Sodoku at any given size.
+An algorithm that uses the Backtracking method to solve Sodoku.
 The algorithm was implemented by using a stack of nodes, each node symbolizes the attempt to allocated some number to a specific cell.
 
 The algorithm works as follows :  
