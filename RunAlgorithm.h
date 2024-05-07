@@ -9,7 +9,7 @@ private:
 	int** board;
 	bool** can_be_changed;
 public:
-	RunAlgorithm(const int n);
+	RunAlgorithm();
 	~RunAlgorithm();
 	void print_Board();
 	void solving_algorithm();

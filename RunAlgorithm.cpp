@@ -1,15 +1,15 @@
 #include "RunAlgorithm.h"
-RunAlgorithm::RunAlgorithm(const int n)
+RunAlgorithm::RunAlgorithm()
 {
-	this->dimension = n;
-	this->board = new int* [n];
-	for (int i = 0; i < n; i++)
+	this->dimension = 9;
+	this->board = new int* [9];
+	for (int i = 0; i < 9; i++)
 	{
 		this->board[i] = new int[this->dimension];
 	}
-	for (int i = 0; i < n; i++)
+	for (int i = 0; i < 9; i++)
 	{
-		for (int j = 0; j < n; j++)
+		for (int j = 0; j < 9; j++)
 		{
 			this->board[i][j] = 0;
 		}
@@ -22,7 +22,7 @@ RunAlgorithm::RunAlgorithm(const int n)
 	{
 		std::cout << "Enter where you want to insert a number i.e 1 and then 4 means insert at row 1 and column 4" << std::endl;
 		std::cin >> temp1 >> temp2;
-		if (temp1<1 || temp1>n || temp2<1 || temp2>n)
+		if (temp1<1 || temp1>9 || temp2<1 || temp2>9)
 		{
 			std::cout << "please insert a proper values" << std::endl;
 			i--;
